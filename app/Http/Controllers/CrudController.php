@@ -15,7 +15,7 @@ public function __construct(){
         return view('landingpage');
     } 
 
-    public function ContactUs(){
+    public function contactUs(){
         return view('ContactUs');
     } 
     public function ContactDB(Request $req){
