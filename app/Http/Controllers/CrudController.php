@@ -8,7 +8,7 @@ class CrudController extends Controller
 {
 
 public function __construct(){
-    $this->middleware("auth")->except(['contactUs','ContactDB']);
+    $this->middleware("auth")->except(['contactUs','contactDB']);
 }
 
   public function index(){
@@ -18,7 +18,7 @@ public function __construct(){
     public function contactUs(){
         return view('contactUs');
     } 
-    public function ContactDB(Request $req){
+    public function contactDB(Request $req){
         $customer = Customer::create([
             "firstname" => $req->firstname,
             "lastname" => $req->lastname,
