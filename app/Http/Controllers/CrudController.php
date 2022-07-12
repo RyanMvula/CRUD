@@ -16,7 +16,7 @@ public function __construct(){
     } 
 
     public function contactUs(){
-        return view('ContactUs');
+        return view('contactUs');
     } 
     public function ContactDB(Request $req){
         $customer = Customer::create([
