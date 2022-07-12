@@ -8,7 +8,7 @@ class CrudController extends Controller
 {
 
 public function __construct(){
-    $this->middleware("auth")->except(['contactUs']);
+    $this->middleware("auth")->except(['contactUs','ContactDB']);
 }
 
   public function index(){
